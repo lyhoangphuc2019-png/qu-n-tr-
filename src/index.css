@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #0e563f;
+  --color-brand-green-dark: #093c2b;
+  --color-brand-green-hover: #12694d;
+  --color-brand-green-light: #eaf5ee;
+  --color-brand-green-border: #cbe3d4;
+
+  --color-brand-gold: #f59e0b;
+  --color-brand-gold-dark: #d97706;
+  --color-brand-gold-hover: #e08e04;
+  --color-brand-gold-light: #fef6e7;
+  --color-brand-gold-border: #fed7aa;
+  --color-brand-gold-text: #8c4e06;
+
+  --color-brand-canvas: #fbf8f1;
+  --color-brand-surface: #ffffff;
+  --color-brand-cream: #f5efe3;
+  --color-brand-border: #ede4d4;
+
+  --color-brand-ink: #15221b;
+  --color-brand-muted: #5e6f66;
+}
+
+:root {
+  --green: #0e563f;
+  --green-dark: #093c2b;
+  --green-hover: #12694d;
+  --mint: #eaf5ee;
+  --mint-border: #cbe3d4;
+  --gold: #f59e0b;
+  --gold-dark: #d97706;
+  --gold-light: #fef6e7;
+  --ink: #15221b;
+  --muted: #5e6f66;
+  --line: #ede4d4;
+  --paper: #fbf8f1;
+  --cream: #f6f0e4;
+  --white: #ffffff;
+  --red: #c84b42;
+  --shadow: 0 12px 35px rgba(14, 86, 63, 0.08);
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8cebe;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8ac9a;
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 12px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
+.toast-animate {
+  animation: pop 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+

@@ -1,0 +1,8 @@
+{
+  "name": "Tới Trưa - Quản Trị & Điều Hành Bếp",
+  "description": "Phần mềm chuyên biệt quản trị đơn hàng, điều phối bếp nấu, quản lý thực đơn và thẻ ăn thành viên Tới Trưa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
